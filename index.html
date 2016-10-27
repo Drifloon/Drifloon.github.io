@@ -50,7 +50,7 @@
         
           <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -84,16 +84,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>很久不切题了，为了找回状态，开始切TC.<br>先挂着…..</p>
-<p>$SRM611$ <br></p>
-<p><strong>Div.1 Easy:</strong> 你需要把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个最小的集合能够表示原集合。然后直接判断即可。（尝试了一波Java，写了1个点…）</p>
+<h2 id="SRM611"><a href="#SRM611" class="headerlink" title="SRM611"></a>SRM611<br></h2><h3 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h3><p>可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">import java.util.Arrays;</div><div class="line">import java.util.*;</div><div class="line"></div><div class="line">public class LCMSet &#123;</div><div class="line">	public long gcd(long x, long y) &#123;</div><div class="line">		if(x == 0 || y == 0) return x + y;</div><div class="line">		else return gcd(y, x % y);</div><div class="line">	&#125;</div><div class="line">	public long lcm(long x, long y) &#123;</div><div class="line">		return x / gcd(x, y) * y;</div><div class="line">	&#125;</div><div class="line">	public List&lt;Long&gt; ease(int[] x) &#123;</div><div class="line">		Arrays.sort(x);</div><div class="line">		List&lt;Long&gt; res = new ArrayList&lt;Long&gt;();</div><div class="line">		for(long t : x) &#123;</div><div class="line">			boolean flag = true;</div><div class="line">			long tmp = 1;</div><div class="line">			for(long v : res) &#123;</div><div class="line">				if(t % v == 0) &#123;</div><div class="line">					tmp = lcm(tmp, v);</div><div class="line">				&#125;</div><div class="line">				if(tmp &gt; t) &#123;</div><div class="line">					flag = false;</div><div class="line">					break;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			if(tmp == t) &#123;</div><div class="line">				flag = false;</div><div class="line">			&#125;</div><div class="line">			if(flag == true) &#123;</div><div class="line">				res.add(t);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		return res;</div><div class="line">	&#125;</div><div class="line">	public String equal(int[] A, int[] B) &#123;</div><div class="line">		List&lt;Long&gt; a = ease(A);</div><div class="line">		List&lt;Long&gt; b = ease(B);</div><div class="line">		if(a.equals(b) == true) return &quot;Equal&quot;;</div><div class="line">		else return &quot;Not equal&quot;;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><br> $Topcoder$</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/24/topcoder-begin/" data-id="cius0mwlp0002j8elcnb3447g" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/10/24/topcoder-begin/" data-id="cius0nxv80000kseld3692gd9" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/10/24/topcoder-begin/#disqus_thread" class="article-comment-link">Commentaren</a>
+        <a href="http://yoursite.com/2016/10/24/topcoder-begin/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/">OI</a></li></ul>
@@ -192,9 +191,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/21/japan2016/" data-id="cius0mwlg0000j8elv14mbtke" class="article-share-link">Delen</a>
+      <a data-url="http://yoursite.com/2016/10/21/japan2016/" data-id="cius0nxvs0004kseli2oneq0s" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/10/21/japan2016/#disqus_thread" class="article-comment-link">Commentaren</a>
+        <a href="http://yoursite.com/2016/10/21/japan2016/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/">life</a></li></ul>
@@ -218,7 +217,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Labels</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">life</a></li></ul>
     </div>
@@ -237,7 +236,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Archieven</h3>
+    <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a></li></ul>
     </div>
@@ -247,7 +246,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recente berichten</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
