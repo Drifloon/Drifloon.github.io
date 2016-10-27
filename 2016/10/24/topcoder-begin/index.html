@@ -7,20 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="很久不切题了，为了找回状态，顺便练练Java, 开始切TC.先挂着…..
 SRM611
-Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.123456789101112131415161718192021222324252627282930313233343536373839404142import java.u">
+Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.123456789101112131415161718192021222324252627282930313233343536import java.util.Arrays;i">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Topcoder，I am back">
 <meta property="og:url" content="http://yoursite.com/2016/10/24/topcoder-begin/index.html">
 <meta property="og:site_name" content=".">
 <meta property="og:description" content="很久不切题了，为了找回状态，顺便练练Java, 开始切TC.先挂着…..
 SRM611
-Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.123456789101112131415161718192021222324252627282930313233343536373839404142import java.u">
-<meta property="og:updated_time" content="2016-10-27T07:22:54.864Z">
+Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.123456789101112131415161718192021222324252627282930313233343536import java.util.Arrays;i">
+<meta property="og:updated_time" content="2016-10-27T13:51:47.474Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Topcoder，I am back">
 <meta name="twitter:description" content="很久不切题了，为了找回状态，顺便练练Java, 开始切TC.先挂着…..
 SRM611
-Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.123456789101112131415161718192021222324252627282930313233343536373839404142import java.u">
+Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.123456789101112131415161718192021222324252627282930313233343536import java.util.Arrays;i">
   
     <link rel="alternate" href="/atom.xml" title="." type="application/atom+xml">
   
@@ -58,9 +58,9 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -93,15 +93,15 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
       
         <p>很久不切题了，为了找回状态，顺便练练Java, 开始切TC.<br>先挂着…..</p>
 <h2 id="SRM611"><a href="#SRM611" class="headerlink" title="SRM611"></a>SRM611</h2><hr>
-<h5 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h5><p>可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">import</span> java.util.*;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LCMSet</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">gcd</span><span class="params">(<span class="keyword">long</span> x, <span class="keyword">long</span> y)</span> </span>&#123;</div><div class="line">		<span class="keyword">if</span>(x == <span class="number">0</span> || y == <span class="number">0</span>) <span class="keyword">return</span> x + y;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">return</span> gcd(y, x % y);</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">lcm</span><span class="params">(<span class="keyword">long</span> x, <span class="keyword">long</span> y)</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> x / gcd(x, y) * y;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> List&lt;Long&gt; <span class="title">ease</span><span class="params">(<span class="keyword">int</span>[] x)</span> </span>&#123;</div><div class="line">		Arrays.sort(x);</div><div class="line">		List&lt;Long&gt; res = <span class="keyword">new</span> ArrayList&lt;Long&gt;();</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">long</span> t : x) &#123;</div><div class="line">			<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</div><div class="line">			<span class="keyword">long</span> tmp = <span class="number">1</span>;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">long</span> v : res) &#123;</div><div class="line">				<span class="keyword">if</span>(t % v == <span class="number">0</span>) &#123;</div><div class="line">					tmp = lcm(tmp, v);</div><div class="line">				&#125;</div><div class="line">				<span class="keyword">if</span>(tmp &gt; t) &#123;</div><div class="line">					flag = <span class="keyword">false</span>;</div><div class="line">					<span class="keyword">break</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(tmp == t) &#123;</div><div class="line">				flag = <span class="keyword">false</span>;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(flag == <span class="keyword">true</span>) &#123;</div><div class="line">				res.add(t);</div><div class="line">			&#125;</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> res;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">equal</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span>[] B)</span> </span>&#123;</div><div class="line">		List&lt;Long&gt; a = ease(A);</div><div class="line">		List&lt;Long&gt; b = ease(B);</div><div class="line">		<span class="keyword">if</span>(a.equals(b) == <span class="keyword">true</span>) <span class="keyword">return</span> <span class="string">"Equal"</span>;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">return</span> <span class="string">"Not equal"</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h5 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h5><p>可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">import</span> java.util.*;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LCMSet</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">gcd</span><span class="params">(<span class="keyword">long</span> x, <span class="keyword">long</span> y)</span> </span>&#123;</div><div class="line">		<span class="keyword">if</span>(x == <span class="number">0</span> || y == <span class="number">0</span>) <span class="keyword">return</span> x + y;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">return</span> gcd(y, x % y);</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">lcm</span><span class="params">(<span class="keyword">long</span> x, <span class="keyword">long</span> y)</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> x / gcd(x, y) * y;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> List&lt;Long&gt; <span class="title">ease</span><span class="params">(<span class="keyword">int</span>[] x)</span> </span>&#123;</div><div class="line">		Arrays.sort(x);</div><div class="line">		List&lt;Long&gt; res = <span class="keyword">new</span> ArrayList&lt;Long&gt;();</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">long</span> t : x) &#123;</div><div class="line">			<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</div><div class="line">			<span class="keyword">long</span> tmp = <span class="number">1</span>;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">long</span> v : res) &#123;</div><div class="line">				<span class="keyword">if</span>(t % v == <span class="number">0</span>) tmp = lcm(tmp, v);</div><div class="line">				<span class="keyword">if</span>(tmp &gt; t) &#123;</div><div class="line">					flag = <span class="keyword">false</span>;</div><div class="line">					<span class="keyword">break</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(tmp == t) flag = <span class="keyword">false</span>;</div><div class="line">			<span class="keyword">if</span>(flag == <span class="keyword">true</span>) res.add(t);</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> res;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">equal</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span>[] B)</span> </span>&#123;</div><div class="line">		List&lt;Long&gt; a = ease(A);</div><div class="line">		List&lt;Long&gt; b = ease(B);</div><div class="line">		<span class="keyword">if</span>(a.equals(b) == <span class="keyword">true</span>) <span class="keyword">return</span> <span class="string">"Equal"</span>;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">return</span> <span class="string">"Not equal"</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
 <p><br> $Topcoder$</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/24/topcoder-begin/" data-id="cius0wgbe0001k8elh3chqwwb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/10/24/topcoder-begin/" data-id="ciusescn500006oel8oocymnz" class="article-share-link">Partager</a>
       
-        <a href="http://yoursite.com/2016/10/24/topcoder-begin/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://yoursite.com/2016/10/24/topcoder-begin/#disqus_thread" class="article-comment-link">Commentaires</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/OI/">OI</a></li></ul>
@@ -114,7 +114,7 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
   
   
     <a href="/2016/10/21/japan2016/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
+      <strong class="article-nav-caption">Ancien</strong>
       <div class="article-nav-title">Trip to Japan</div>
     </a>
   
@@ -159,7 +159,7 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
+    <h3 class="widget-title">Mot-clés</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/OI/">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">life</a></li></ul>
     </div>
@@ -169,7 +169,7 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
+    <h3 class="widget-title">Nuage de mot-clés</h3>
     <div class="widget tagcloud">
       <a href="/tags/OI/" style="font-size: 10px;">OI</a> <a href="/tags/life/" style="font-size: 10px;">life</a>
     </div>
@@ -188,7 +188,7 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
+    <h3 class="widget-title">Articles récents</h3>
     <div class="widget">
       <ul>
         
@@ -215,7 +215,7 @@ Div.1 Easy:可以把求两个集合化简成一个类似Basis的小集合，意�
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 Mikhail Kakapov<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
