@@ -48,9 +48,9 @@
       </nav>
       <nav id="sub-nav">
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="Flux RSS"></a>
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
         
-        <a id="nav-search-btn" class="nav-icon" title="Rechercher"></a>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
       </nav>
       <div id="search-form-wrap">
         <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
@@ -87,9 +87,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/08/Learning-List/" data-id="civ97m1xo0000e8elgynyuh9d" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/11/08/Learning-List/" data-id="civ9hejr10001t0elgy2pdmwe" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/11/08/Learning-List/#disqus_thread" class="article-comment-link">Commentaires</a>
+        <a href="http://yoursite.com/2016/11/08/Learning-List/#disqus_thread" class="article-comment-link">Comments</a>
       
       
     </footer>
@@ -138,9 +138,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/08/Trip to japan - chapter 2/" data-id="civ97m1y80004e8el0cu9kpm7" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/11/08/Trip to japan - chapter 2/" data-id="civ9hejr70003t0elbk34mvpx" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/11/08/Trip to japan - chapter 2/#disqus_thread" class="article-comment-link">Commentaires</a>
+        <a href="http://yoursite.com/2016/11/08/Trip to japan - chapter 2/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/life/">life</a></li></ul>
@@ -178,15 +178,15 @@
       
         <p>很久不切题了，为了找回状态，顺便练练Java, 开始切TC.<br>先挂着…..</p>
 <h2 id="SRM611"><a href="#SRM611" class="headerlink" title="SRM611"></a>SRM611</h2><hr>
-<h5 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h5><p>可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> java.util.Arrays;</div><div class="line"><span class="keyword">import</span> java.util.*;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">LCMSet</span> </span>&#123;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">gcd</span><span class="params">(<span class="keyword">long</span> x, <span class="keyword">long</span> y)</span> </span>&#123;</div><div class="line">		<span class="keyword">if</span>(x == <span class="number">0</span> || y == <span class="number">0</span>) <span class="keyword">return</span> x + y;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">return</span> gcd(y, x % y);</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">lcm</span><span class="params">(<span class="keyword">long</span> x, <span class="keyword">long</span> y)</span> </span>&#123;</div><div class="line">		<span class="keyword">return</span> x / gcd(x, y) * y;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> List&lt;Long&gt; <span class="title">ease</span><span class="params">(<span class="keyword">int</span>[] x)</span> </span>&#123;</div><div class="line">		Arrays.sort(x);</div><div class="line">		List&lt;Long&gt; res = <span class="keyword">new</span> ArrayList&lt;Long&gt;();</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">long</span> t : x) &#123;</div><div class="line">			<span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</div><div class="line">			<span class="keyword">long</span> tmp = <span class="number">1</span>;</div><div class="line">			<span class="keyword">for</span>(<span class="keyword">long</span> v : res) &#123;</div><div class="line">				<span class="keyword">if</span>(t % v == <span class="number">0</span>) tmp = lcm(tmp, v);</div><div class="line">				<span class="keyword">if</span>(tmp &gt; t) &#123;</div><div class="line">					flag = <span class="keyword">false</span>;</div><div class="line">					<span class="keyword">break</span>;</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">			<span class="keyword">if</span>(tmp == t) flag = <span class="keyword">false</span>;</div><div class="line">			<span class="keyword">if</span>(flag == <span class="keyword">true</span>) res.add(t);</div><div class="line">		&#125;</div><div class="line">		<span class="keyword">return</span> res;</div><div class="line">	&#125;</div><div class="line">	<span class="function"><span class="keyword">public</span> String <span class="title">equal</span><span class="params">(<span class="keyword">int</span>[] A, <span class="keyword">int</span>[] B)</span> </span>&#123;</div><div class="line">		List&lt;Long&gt; a = ease(A);</div><div class="line">		List&lt;Long&gt; b = ease(B);</div><div class="line">		<span class="keyword">if</span>(a.equals(b) == <span class="keyword">true</span>) <span class="keyword">return</span> <span class="string">"Equal"</span>;</div><div class="line">		<span class="keyword">else</span> <span class="keyword">return</span> <span class="string">"Not equal"</span>;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<p><br> $Topcoder$</p>
+<h5 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h5><p>可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.</p>
+<h5 id="Div-1-Medium"><a href="#Div-1-Medium" class="headerlink" title="Div.1 Medium:"></a><em>Div.1 Medium:</em></h5><p>发现所选$n-1$条边的平均值无论怎么变化, 最多只有$E^2$中不同的最小生成树（因为我们要求$\sum_{i=0}^{n-1} (w_i - M)^2 $, 于是这里最小生成树的边权是$(w_i - M)^2$， $M$是平均值，$w_i$为边权), 然后枚举即可。<br>原因是由$Kruskal$算法知道，边的处理顺序决定着最小生成树的形状。 对于任意的两条边$i, j$，它们排序的顺序由$(w_i - M)^2$决定，通过$(w_i - M)^2 &lt; (w_j - M)^2$可以推出 $\frac{w_i + w_j}{2} &lt; M$ 即存在$M’$是使得$i, j$前后顺序改变的临界点，这样的点显然有$E^2$个。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/24/topcoder-begin/" data-id="civ97m1xz0002e8elz254uygg" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/10/24/topcoder-begin/" data-id="civ9hejqw0000t0elkgs16p6y" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/10/24/topcoder-begin/#disqus_thread" class="article-comment-link">Commentaires</a>
+        <a href="http://yoursite.com/2016/10/24/topcoder-begin/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/OI/">OI</a></li></ul>
@@ -339,9 +339,9 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/10/21/Trip to japan - chapter 1/" data-id="civ97m1xv0001e8el7pjvhh8h" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/10/21/Trip to japan - chapter 1/" data-id="civ9hejrh0007t0elcv3vpphs" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/10/21/Trip to japan - chapter 1/#disqus_thread" class="article-comment-link">Commentaires</a>
+        <a href="http://yoursite.com/2016/10/21/Trip to japan - chapter 1/#disqus_thread" class="article-comment-link">Comments</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="tags/life/">life</a></li></ul>
@@ -365,7 +365,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Mot-clés</h3>
+    <h3 class="widget-title">Tags</h3>
     <div class="widget">
       <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="tags/OI/">OI</a></li><li class="tag-list-item"><a class="tag-list-link" href="tags/life/">life</a></li></ul>
     </div>
@@ -387,7 +387,7 @@
   
     
   <div class="widget-wrap">
-    <h3 class="widget-title">Articles récents</h3>
+    <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
         
@@ -431,7 +431,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2016 Mikhail Kakapov<br>
-      Propulsé by <a href="http://hexo.io/" target="_blank">Hexo</a>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
 </footer>
