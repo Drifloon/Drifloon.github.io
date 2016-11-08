@@ -11,7 +11,7 @@
 <meta property="og:url" content="http://yoursite.com/2016/11/08/topcoder-begin/index.html">
 <meta property="og:site_name" content=".">
 <meta property="og:description" content="很久不切题了，为了找回状态，顺便练练Java, 开始切TC.先挂着…..">
-<meta property="og:updated_time" content="2016-11-08T13:07:10.140Z">
+<meta property="og:updated_time" content="2016-11-08T13:21:08.567Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Topcoder，I am back">
 <meta name="twitter:description" content="很久不切题了，为了找回状态，顺便练练Java, 开始切TC.先挂着…..">
@@ -88,13 +88,13 @@
         <p>很久不切题了，为了找回状态，顺便练练Java, 开始切TC.<br>先挂着…..</p>
 <a id="more"></a>
 <h2 id="SRM611"><a href="#SRM611" class="headerlink" title="SRM611"></a>SRM611</h2><hr>
-<h5 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h5><p>可以把求两个集合化简成一个类似Basis的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.</p>
+<h5 id="Div-1-Easy"><a href="#Div-1-Easy" class="headerlink" title="Div.1 Easy:"></a><em>Div.1 Easy:</em></h5><p>可以把求两个集合化简成一个类似$Basis$的小集合，意思差不多是求一个能够表示原集合的最小的集合。然后直接判断即可.</p>
 <h5 id="Div-1-Medium"><a href="#Div-1-Medium" class="headerlink" title="Div.1 Medium:"></a><em>Div.1 Medium:</em></h5><p>发现所选$n-1$条边的平均值无论怎么变化, 最多只有$E^2$中不同的最小生成树（因为我们要求$\sum_{i=0}^{n-1} (w_i - M)^2 $, 于是这里最小生成树的边权是$(w_i - M)^2$， $M$是平均值，$w_i$为边权), 然后枚举即可。<br>原因是由$Kruskal$算法知道，边的处理顺序决定着最小生成树的形状。 对于任意的两条边$i, j$，它们排序的顺序由$(w_i - M)^2$决定，通过$(w_i - M)^2 &lt; (w_j - M)^2$可以推出 $\frac{w_i + w_j}{2} &lt; M$ 即存在$M’$是使得$i, j$前后顺序改变的临界点，这样的点显然有$E^2$个。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/11/08/topcoder-begin/" data-id="civ9ihnjr00040selk65zb379" class="article-share-link">Partager</a>
+      <a data-url="http://yoursite.com/2016/11/08/topcoder-begin/" data-id="civ9izo5600007kelu58lw2zm" class="article-share-link">Partager</a>
       
         <a href="http://yoursite.com/2016/11/08/topcoder-begin/#disqus_thread" class="article-comment-link">Commentaires</a>
       
